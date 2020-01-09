@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.othelo {
+    height: 1600px;
+    width: 80%;
+    
+    margin: 50px 100px;
+}
+
+.containers {
+    height: 300px;
+    width: 80%;
+    border: 3px solid black;
+    margin: 25px 100px;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-flex;
+}
+
+.content {
+    margin: 40px auto;
+    width: 50%;
+    height: 100%;
+}
+
+.imgbox {
+    margin: 50px auto;
+    width: 50%;
+    height: 100%;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+
+}
+
