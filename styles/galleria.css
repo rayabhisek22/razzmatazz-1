@@ -30,7 +30,7 @@ gallery
 } 
 
 
-h1 {
+.title h1 {
 	background-image: url(https://media.giphy.com/media/SxZrIkPMQ47kI/giphy.gif);
 	background-size: cover;
 	color: transparent;
@@ -112,85 +112,143 @@ h1 {
     text-decoration: none;
     
 }
+/*******************/
+*{
+    margin:0;
+    padding:0;
+    /* font-family:sans-serif; */
+}
 
-/***********************
-footer
-***********************/
-.footer {
-    background-color: #000000;
-    color: #fff;
-    height: 400px;
+
+.body-content{
     width: 100%;
-    display: inline-flex;
-    margin-top: 50px;
-   
+    padding:20px;
+    text-align: justify;
+    box-sizing: border-box;
+    font-size:18px;
+    line-height:40px;
+
 }
 
-.details {
+.footer{
+ width:100%;
+ background: #00121b;
+display:block;
+
+}
+
+.inner-footer{
+    width:100%;
+    height: 400px;
+    margin:auto auto;
+    padding:30px 10px;
+    display:inline-flex;
+    box-sizing:border-box;
+    justify-content:center;
+
+}
+
+
+.footer-items{
+    width:33.3%;
     height: 100%;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 50px;
-    letter-spacing: 2px;
+    padding:10px 20px;
+    box-sizing:border-box;
+ 
 }
 
-.fa-user {
-    height: 40px;
-    width: 40px;
-    color: #ff7315;
+h1{
+    padding:10px 0;
+    font-size:25px;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+
+}
+.logo{
+    font-family: 'Caveat', cursive;
 }
 
-.fa-phone {
-    height: 40px;
-    width: 40px;
-    color: #ffbd69;
+
+.footer-items p{
+    color:#a5e6d7;
+    font-size:16px;
+    font-family: 'Dancing Script', cursive;
+    text-align:justify;
+    line-height: 25px;
 }
 
-.nav {
-    margin-top: 50px;
-    height: 100%;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+h2{
+    margin:10px 0;
+    color:grey;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+
 }
 
-a {
+
+
+.border{
+    height:2px;
+    width:40px;
+    background:#ff9800;
+
+
+}
+
+
+ul{
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+}
+
+
+ul a{
     text-decoration: none;
-    color: #FFF;
+    outline: none;
+    color:#fff;
+    transition: 0.3s;
+
 }
 
-a:hover {
-    color: #ffbd69;
+ul a li {
+    padding: 0px auto;
+    margin: 15px auto;
+    font-size: 25px;
 }
 
-.info {
-    height: 100%;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 2px;
-    margin-right: 40px;
+ul a:hover{
+    color:#ff9800;
 }
 
-.info  h2 {
-    color: #fe6845;
-    font-size: 40px;
+
+ul li{
+    margin:30px 0;
+    height:25px;
+
 }
 
-.info .first {
-    color: #91bd3a;
-    font-size: 20px;
-    font-weight: bold;
+li i{
+    margin-right:20px;
+
 }
 
-.info div {
-    color: #ffa259;
+.footer-bottom{
+    padding:10px;
+    background:#3d545f;
+    color:#fff;
+    font-size: 12px;
+
 }
+
+
+
+
+
 
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
@@ -199,7 +257,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 1900px;
+        height: 100%;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -210,33 +268,9 @@ a:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: auto auto;
+        margin: 50px auto;
     }
-    [class*="footer"] {
-      display: block;
-      height: 1200px;
-      width: 100%;
-    }
-    [class*="details"] {
-        display: block;
-        height: 320px;
-        width: 100%;
-        margin: 20px auto;
-      }
-      [class*="nav"] {
-        display: block;
-        height: 320px;
-        width: 100%;
-        margin: 40px auto;
-       
-      }
-      [class*="info"] {
-        display: block;
-        height: 320px;
-        width: 100%;
-        margin: 20px auto;
-      }
-
+ 
       .swiper-button-prev {
           display: none;
       }
@@ -244,10 +278,23 @@ a:hover {
         display: none;
     }
 
-    h1 {
+
+    [class*="title"] h1 {
         font-size: 60px;
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
+      }
+    
+    [class*="inner-footer"] {
+        display: block;
+        height: 1100px;
+        width: 100%;
+      }
+      [class*="footer-items"] {
+          display: block;
+          height: 370px;
+          width: 100%;
+  
+        }
   }

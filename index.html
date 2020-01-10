@@ -9,19 +9,17 @@
         <link rel="stylesheet" href="styles/home.css">
         <link href="https://fonts.googleapis.com/css?family=El+Messiri|Permanent+Marker&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Stoke&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mogra&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
         
-        <!-- <div class="navbar">
-            <button class="btn-3">Home</button>
-            <button class="btn-3">Event</button>
-            <button class="btn-3">Registration</button>
-            <button class="btn-3">Team</button>
-            <button class="btn-3">Gallery</button>
-            <button class="btn-3">Contact Us</button>
-        </div> -->
+        <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+        <img id="fairy" src="images/fairy.png">
+    </div>
 
         
 
@@ -58,7 +56,7 @@
                 ❄
                 </div>
               </div>
-            <h1>
+            <h1 class="raz">
                 <span>R</span>
                 <span>A</span>
                 <span>Z</span>
@@ -98,11 +96,11 @@
             </div>
             <div id="mushroom">
                 <img class="mushroom2" src="images/mushroom.png" style="height: 250px; width: 200px;">
-                <h2 class="text2">Registration</h2>
+                <h2 class="text2"><a href="">Registration</a></h2>
             </div>
-            <div id="mushroom">
+            <div id="mushroom" class="wood">
                 <img class="banner" src="images/banner.png" style="height: 300px; width: 250px;">
-                <h2 class="text4">Team</h2>
+                <h2 class="text4"><a href="team.html">Team</a></h2>
                 <h2 class="text5"><a href="faq.html">FAQ</a></h2>
             </div>
             <div id="mushroom">
@@ -115,8 +113,87 @@
             </div>
         </div>
 
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+
+                        <h1 class="logo">
+                                RAZZMATAZZ
+                        </h1>
+        
+                            <p>
+                                   Theme: Sanskruti (a sanskrit word meaning 'culture')
+                                    celebrating our diversity :
+                                    
+                                    
+                                Diversity is one true thing we all have in common. Every country’s culture is unique in it's traditional value, religion, dance, music, cuisine, dressing, language etc. ; and this year we here, at Razzmatazz, are celebrating it in every way possible! Come join us and be a part of this wonderful family and celebrate the very diversities that unit 
+                             </p>
+                </div>
+                <div class="footer-items">
+
+                        <h1>
+                            QUICK LINKS
+                        </h1>
+         
+                         <div class="border"></div>
+                         <ul>
+                             <a href="index.html"><li>HOME</li></a>
+                             
+                             <a href="events.html"><li>EVENTS</li></a>
+                             
+                             <a href="faq.html"><li>FAQ</li></a>
+                             
+                             <a href="galleria.html"><li>GALLERIA</li></a>
+                             
+                             <a href="team.html"><li>TEAM</li></a>
+                             <a href="register.html"><li>REGISTER</li></a>
+                         </ul>
+                            
+                 </div>
+
+                 <div class="footer-items">
+
+                        <h1>
+                            CONTACT US
+                        </h1>
+         
+                         <div class="border"></div>
+                         <ul>
+                             <li><h2>SUPRATIM PAUL<br>8876765265</h2>
+                                 
+                             </li>
+                             <li><h2>RISHABH JAIN<br>8011896864</h2>
+                                    
+                            </li>
+                            <li><h2>KRITIMAN ROY<br>7002398946</h2>
+                                       
+                            </li>
+                         </ul>
+                            
+                 </div>
+                
+            </div>
+
+            <div class="footer-bottom">
+                copyright:Razzmatazz.nits .All Rights Reserved
+            </div>
+        </div>
       
             
-        <script src="js/home.js"></script>   
+        <script src="js/home.js"></script>  
+
+        <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            //Preloader
+            preloaderFadeOutTime = 3000;
+            function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+            });
+            </script> 
     </body>
 </html>

@@ -1,20 +1,42 @@
 body {
     margin: 0;
     padding: 0;
-    height: 400px;
+    height: 100%;
     width: 100%;
+    display: block;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.card {
-    width: 400px;
+.container {
+    display: inline-flex;
     height: 500px;
-    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.single {
+    display: inline-flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 30px 30px;
+    position: relative;
+    display: block;
     background-color: #fff;
-    left: 67%;
-    top: 9%;
+    left: 0;
+    top: 0;
     transform-style: preserve-3d;
     transform: perspective(2000px);
     box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 20px 100px rgba(0,0,0,0.5) ;
@@ -54,6 +76,7 @@ body {
 .card .imgbox {
     width: 100%;
     height: 100%;
+
     position: relative;
     transform-origin: left;
     background-color: black;
@@ -64,8 +87,8 @@ body {
 }
 
 img {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
 }
 
 .glow {
@@ -100,20 +123,21 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+
     box-sizing: border-box;
     padding: 20px;
     z-index: -1;
     
 }
 
-h2 {
+.details h2 {
     
-    height: 50px;
-    width: 350px;
+
+    width: 250px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #004445;
+   
     border-radius: 40px;
     padding-top: 15px;
     transition: 1s;
@@ -124,17 +148,14 @@ a {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #ff9800;
 }
 
-h2:hover {
-  background-color: #000;  
-}
+
 
 .content {
-    margin-left:  250px;
-    margin-top: 100px;
-    width: 350px;
+
+    width: 250px;
     color: #fff;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.8);
@@ -146,10 +167,174 @@ h2:hover {
     
 }
 
-/* #ans1 {
-    
-} */
+
 
 .content:target {
     display: block;
 }
+
+/*******************/
+*{
+    margin:0;
+    padding:0;
+    /* font-family:sans-serif; */
+}
+
+
+.body-content{
+    width: 100%;
+    padding:20px;
+    text-align: justify;
+    box-sizing: border-box;
+    font-size:18px;
+    line-height:40px;
+
+}
+
+.footer{
+
+ width:100%;
+ background: #00121b;
+ display:block;
+
+}
+
+.inner-footer{
+    width:100%;
+    height: 400px;
+    margin:auto auto;
+    padding:30px 10px;
+    display:inline-flex;
+    box-sizing:border-box;
+    justify-content:center;
+
+}
+
+
+.footer-items{
+    width:33.3%;
+    height: 100%;
+    padding:10px 20px;
+    box-sizing:border-box;
+ 
+}
+
+h1{
+    padding:10px 0;
+    font-size:25px;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+
+}
+.logo{
+    font-family: 'Caveat', cursive;
+}
+
+
+.footer-items p{
+    color:#a5e6d7;
+    font-size:16px;
+    font-family: 'Dancing Script', cursive;
+    text-align:justify;
+    line-height: 25px;
+}
+
+h2{
+    margin:10px 0;
+    color:grey;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+}
+
+
+
+.border{
+    height:2px;
+    width:40px;
+    background:#ff9800;
+
+
+}
+
+
+ul{
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+}
+
+
+ul a{
+    text-decoration: none;
+    outline: none;
+    color:#fff;
+    transition: 0.3s;
+
+}
+
+ul a li{
+    margin: 20px auto;
+
+}
+
+ul a:hover{
+    color:#ff9800;
+}
+
+
+ul li{
+    margin:30px 0;
+    height:25px;
+
+}
+
+li i{
+    margin-right:20px;
+
+}
+
+.footer-bottom{
+    padding:10px;
+    background:#3d545f;
+    color:#fff;
+    font-size: 12px;
+
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    [class*="inner-footer"] {
+      display: block;
+      height: 900px;
+      width: 100%;
+    }
+    [class*="footer-items"] {
+        display: block;
+        height: 320px;
+        width: 100%;
+
+    }
+
+    [class*="container"] {
+        display: block;
+        height: 1200px;
+        width: 100%;
+
+    }
+    [class*="single"] {
+        display: block;
+ 
+        width: 100%;
+
+    }
+
+  
+  }
