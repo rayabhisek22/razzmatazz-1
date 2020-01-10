@@ -11,6 +11,11 @@ body {
     animation: scale 2000ms infinite;
 
   }
+  .spinner h1 {
+    justify-content: center;
+    text-align: center;
+    color: #ff9800;
+  }
  
   .spinner-wrapper {
     position: fixed;
@@ -492,22 +497,28 @@ li i{
       width: 100%;
     }
 
+    [class*="witch"] {
+
+      margin-top: 20px;
+ 
+    }
+
     [class*="mushroom1"] {
       margin-left: 50%;
-      margin-top: 150px;
+      margin-top: 220px;
       height: 150px;
       width: 150px
     }
 
     [class*="mushroom2"] {
       margin-left: 5%;
-      margin-top: -10px;
+      margin-top: 70px;
 
     }
     
     [class*="mushroom3"] {
       margin-left: 40%;
-      margin-top: -250px;
+      margin-top: -100px;
 
     }
     [class*="text1"] {
@@ -541,7 +552,7 @@ li i{
     }
 
     h1 span {
-      font-size: 40px;
+      font-size: 60px;
     }
 
 }
@@ -560,7 +571,7 @@ li i{
 
   [class*="mushroom3"] {
     margin-left: 40%;
-    margin-top: 50px;
+    margin-top: 130px;
 
   }
   

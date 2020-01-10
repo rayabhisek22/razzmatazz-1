@@ -17,7 +17,8 @@
         
         <!--CSS Spinner-->
     <div class="spinner-wrapper">
-        <div class="spinner"></div>
+        <div class="spinner"><h1>RAZZMATAZZ is loading</h1></div>
+
         <img id="fairy" src="images/fairy.png">
     </div>
 
@@ -187,7 +188,7 @@
         <script>
             $(document).ready(function() {
             //Preloader
-            preloaderFadeOutTime = 3000;
+            preloaderFadeOutTime = 5000;
             function hidePreloader() {
             var preloader = $('.spinner-wrapper');
             preloader.fadeOut(preloaderFadeOutTime);
