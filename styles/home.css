@@ -35,13 +35,17 @@ body {
 
   
 .date {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 1000;
     justify-content: center;
     text-align: center;
-    color: #000;
+    color: #9d0b0b;
     position: absolute;
-    left: 30%;
-    top: 65%;
+    font-family: 'Baloo Bhai', cursive;
+    left: 75%;
+    top: 67%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
    transform: translate(-50%,-50%); 
 }
 
@@ -570,9 +574,35 @@ li i{
     }
 
     h1 span {
-      font-size: 60px;
+      font-size: 40px;
+      
     }
 
+    .date {
+      margin-top: -150px;
+      margin-left: -200px;
+      font-size: 15px;
+    }
+
+    .date span {
+      display: block;
+    }
+
+    #witch {
+      height: 200px;
+    }
+
+    #fairy {
+      height: 200px;
+      width: 200px;
+      justify-content: center;
+      align-items: center;
+      margin-left: -70px;
+    }
+
+    .spinner h1 {
+      font-size: 40px;
+    }
 }
 
 

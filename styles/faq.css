@@ -4,7 +4,7 @@ body {
     height: 100%;
     width: 100%;
     display: block;
-    background: url("E:/razzmatazzz/images/faq.jpg");
+    background: url("../images/faq.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -277,7 +277,7 @@ ul a{
 }
 
 ul a li{
-    margin: 20px auto;
+    margin: 10px auto;
 
 }
 
