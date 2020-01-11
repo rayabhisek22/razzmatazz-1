@@ -5,10 +5,11 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 body {
-    background: url("E:/razzmatazzz/images/grad.jpeg");
+    background: url("../images/grad.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -19,14 +20,22 @@ h1 {
     text-align: center;
     font-size: 2rem;
     font-family: 'Tomorrow', sans-serif;
+    text-transform: uppercase;
     
   }
+
+.bigbigcontainer {
+    display: block;
+    height: 100%;
+}
+
+
+
 .bigcontainer {
     position: relative;
     width:100%;
-    height:100%;
+    height: 100%;
     display:inline-flex;
-    
     flex-flow: row wrap;
 
 }
@@ -45,8 +54,8 @@ h1 {
     right: 0;
     height:100%;
     display: block;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -57,10 +66,40 @@ img{
     object-fit: cover;
 }
 
-.container{
+.one {
     position: relative;
     width:100%;
     height:650px;
+    display: block;
+    justify-content: center;
+    margin:auto auto;
+    align-items: center;
+}
+
+.two {
+    position: relative;
+    width:100%;
+    height:650px;
+    display: block;
+    justify-content: center;
+    margin:auto auto;
+    align-items: center;
+}
+
+.small {
+    position: relative;
+    width:100%;
+    height:650px;
+    display: block;
+    justify-content: center;
+    margin:auto auto;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width:100%;
+    height:500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -69,21 +108,41 @@ img{
 
 }
 
-.eight {
+.big {
     position: relative;
     width:100%;
     height:1550px;
+    display: block;
+    justify-content: center;
+    margin:auto auto;
+    align-items: center;
+}
+
+.eight {
+    position: relative;
+    width:100%;
+    height:1400px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     margin:auto auto;
     align-items: center;   
+}
+
+.lilbig {
+    position: relative;
+    width:100%;
+    height:1050px;
+    display: block;
+    justify-content: center;
+    margin:auto auto;
+    align-items: center;
 }
 
 .four {
     position: relative;
     width:100%;
-    height:1050px;
+    height:950px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -91,6 +150,16 @@ img{
     align-items: center;   
 }
 
+.three {
+    position: relative;
+    width:100%;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin:auto auto;
+    align-items: center;   
+}
 
 .card{
     position: relative;
@@ -184,6 +253,108 @@ img{
 }
 
 
+/********************/
+
+.card1{
+    position: relative;
+    top:0;
+    left:0;
+    margin:auto auto;
+    width:600px;
+    height:400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition:0.5s;
+    overflow:hidden;
+    
+}
+
+.card1 .front img{
+    width:600px;
+    height:400px;
+    object-fit: cover;
+}
+
+
+.card1 .front{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    backface-visibility: hidden;
+    transform:rotateX(0deg);
+    transition:0.5s;
+    
+}
+
+.card1:hover .front{
+
+    transform: rotateX(-180deg);
+
+
+}
+
+.card1 .back{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    backface-visibility: hidden;
+    transform:rotateX(180deg);
+    transition:0.5s;
+   
+}
+
+.card1 .back:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-50%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.1);
+}
+
+.card1:hover .back{
+
+    transform: rotateX(0deg);
+}
+
+.card1 .back .details{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    width:100%;
+    
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+
+}
+
+.card1 .back .details h2{
+    margin:0;
+    padding:0;
+    font-size:24px;
+    color:#fff;
+
+}
+
+.card1 .back .details h2 span{
+    color:#a7a7a7;
+    font-size:16px;
+
+}
+
+
+
+/******************/
+
 
 .social-icons{
     padding:10px 0;
@@ -225,38 +396,36 @@ img{
     margin-top:5%;
 }
 
-/* @media screen 
-  and (max-device-width: 450px) 
-  and (max-device-height: 850px) 
-  and (-webkit-device-pixel-ratio: 3) {
 
-    .container{
-        height:120vh;
-        display:block;
-
-    }
-    
-
-} */
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-   /* [class*="container"] {
-      width: 100%;
-      display: block;
-      height: 1500px;
 
-    }*/
-    #two{
+    .two{
       width: 100%;
       display: block;
-      height: 103vh;
+      height: 1100px;
     }
 
-    #one{
-        width:100%;
-        height:75vh;
+    .three{
+        width: 100%;
+        display: block;
+        height: 1400px;
+      }
 
+    .card {
+        margin: 50px auto;
+    }
+
+    .big {
+        width: 100%;
+        display: block;
+        height: 4100px;
+    }
+
+    .lilbig {
+        width: 100%;
+        display: block;
+        height: 1800px;
     }
 
   .profile{
@@ -340,133 +509,7 @@ navbar
 }
 }
 
-/*******************/
- *{
-    margin:0;
-    padding:0;
-    /* font-family:sans-serif; */
-}
 
-/* 
-.body-content{
-    width: 100%;
-    padding:20px;
-    text-align: justify;
-    box-sizing: border-box;
-    font-size:18px;
-    line-height:40px;
-
-}
-
-.footer{
- width:100%;
- background: #00121b;
-display:block;
-
-}
-
-.inner-footer{
-    width:100%;
-    height: 400px;
-    margin:auto auto;
-    padding:30px 10px;
-    display:inline-flex;
-    box-sizing:border-box;
-    justify-content:center;
-
-}
-
-
-.footer-items{
-    width:33.3%;
-    height: 100%;
-    padding:10px 20px;
-    box-sizing:border-box;
- 
-}
-
-h1{
-    padding:10px 0;
-    font-size:25px;
-    color:#fff;
-    text-transform: uppercase;
-    font-family: 'Cinzel', serif;
-
-}
-.logo{
-    font-family: 'Caveat', cursive;
-}
-
-
-.footer-items p{
-    color:#a5e6d7;
-    font-size:16px;
-    font-family: 'Dancing Script', cursive;
-    text-align:justify;
-    line-height: 25px;
-}
-
-h2{
-    margin:10px 0;
-    color:grey;
-    font-size: 16px;
-    font-weight: lighter;
-    text-transform: uppercase;
-
-}
-
-
-
-.border{
-    height:2px;
-    width:40px;
-    background:#ff9800;
-
-
-}
-
-
-ul{
-    list-style: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-
-}
-
-
-ul a{
-    text-decoration: none;
-    outline: none;
-    color:#fff;
-    transition: 0.3s;
-
-}
-
-ul a:hover{
-    color:#ff9800;
-}
-
-
-ul li{
-    margin:30px 0;
-    height:25px;
-
-}
-
-li i{
-    margin-right:20px;
-
-}
-
-.footer-bottom{
-    padding:10px;
-    background:#3d545f;
-    color:#fff;
-    font-size: 12px;
-
-} 
- */
 
 
 

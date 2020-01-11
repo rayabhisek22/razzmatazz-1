@@ -4,17 +4,22 @@ body {
   }
 
   #fairy {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     position: absolute;
-    margin: 15% 40%;
+    top: 35%;
+    left: 38%;
+    transform: translate(-50%,-50%);
     animation: scale 2000ms infinite;
 
   }
   .spinner h1 {
     justify-content: center;
     text-align: center;
-    color: #ff9800;
+    color: #3282b8;
+    margin-top: 10%;
+    text-transform: uppercase;
+    font-size: 4rem;
   }
  
   .spinner-wrapper {
