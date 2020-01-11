@@ -10,11 +10,13 @@
 
 .head {
     font-size: 80px;
-    color: white;
+    color: #fffdf9;
     background: rgba(0,0,0,0.5);
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-family: 'Kumar One', cursive;
+
 }
 
 #body{
@@ -75,6 +77,7 @@ body {
 
         .back h2 {
             font-size: 40px;
+            color: seashell;
         }
 
         .back {
@@ -116,7 +119,10 @@ body {
       height: 300px;
       width: 600px;
       padding: 1em 2em;
-      background: #313131;
+      background: #c94b4b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
       border-radius: 10px;
    
     }
@@ -274,12 +280,12 @@ li i{
 
     [class*="inner-footer"] {
       display: block;
-      height: 900px;
+      height: 1200px;
       width: 100%;
     }
     [class*="footer-items"] {
         display: block;
-        height: 320px;
+        height: 400px;
         width: 100%;
 
     }
@@ -318,6 +324,7 @@ li i{
 
     .text-shadow {
         line-height: 34px;
+        font-size: 30px;
     }
   
   }

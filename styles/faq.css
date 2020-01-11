@@ -10,6 +10,16 @@ body {
     background-size: cover;
 }
 
+.head {
+    font-size: 60px;
+    color: #fffdf9;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Kumar One', cursive;
+
+}
 
 
 .bigcontainer {
@@ -352,14 +362,18 @@ li i{
 
     [class*="inner-footer"] {
       display: block;
-      height: 1100px;
+      height: 1200px;
       width: 100%;
     }
     [class*="footer-items"] {
         display: block;
-        height: 370px;
+        height: 400px;
         width: 100%;
 
+    }
+
+    .head {
+        font-size: 20px;
     }
 
   

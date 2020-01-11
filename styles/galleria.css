@@ -220,10 +220,9 @@ ul a{
 
 }
 
-ul a li {
-    padding: 0px auto;
-    margin: 15px auto;
-    font-size: 25px;
+ul a li{
+    margin: 10px auto;
+
 }
 
 ul a:hover{
@@ -260,12 +259,12 @@ li i{
 
     [class*="inner-footer"] {
         display: block;
-        height: 1100px;
+        height: 1200px;
         width: 100%;
       }
       [class*="footer-items"] {
           display: block;
-          height: 370px;
+          height: 400px;
           width: 100%;
   
         }
