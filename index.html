@@ -18,12 +18,13 @@
         
 
         <!--CSS Spinner-->
+        <div id="loader">
     <div class="spinner-wrapper">
         <div class="spinner"><h1>RAZZMATAZZ <div> is loading</div></h1></div>
 
         <img id="fairy" src="images/fairy.png">
-    </div>
-
+    </div></div>
+        <div id="body">
         <div class="content" style=" background-image: url(images/castle2.jpg);">
             <div class="incand"><img src="images/color.png"></div>
             <div class="snowflakes" aria-hidden="true">
@@ -187,7 +188,7 @@
             <div class="footer-bottom">
                 copyright:Razzmatazz.nits .All Rights Reserved
             </div>
-        </div>
+        </div></div>
       
             
 
@@ -197,20 +198,11 @@
             
             $(document).ready(function() {
             //Preloader
-            preloaderFadeOutTime = 7000;
-            function hidePreloader() {
-            var preloader = $('.spinner-wrapper');
-            preloader.fadeOut(preloaderFadeOutTime);
-            }
-            hidePreloader();
-            $("#click").click(()=>{
-                new Audio ("./music/music.mp3").play ()
-                });
-            })
+            
             
             $('#body').show();
-            $(".spinner-wrapper").hide();
-            
+            $("#loader").hide();
+            })
             </script> 
     </body>
 </html>
