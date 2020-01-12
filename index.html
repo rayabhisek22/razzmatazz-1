@@ -16,6 +16,7 @@
     </head>
     <body>
         
+
         <!--CSS Spinner-->
     <div class="spinner-wrapper">
         <div class="spinner"><h1>RAZZMATAZZ <div> is loading</div></h1></div>
@@ -71,6 +72,7 @@
             </h1>
 
             <h3 class="date">14th-15th<span> Feb'19</span></h3>
+            <button   id="click" onclick="fun()">Music</button>
             
             <div id="witch">
                 <img class="witch" src="images/witch2.png">
@@ -192,15 +194,23 @@
         <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script>
+            
             $(document).ready(function() {
             //Preloader
-            preloaderFadeOutTime = 5000;
+            preloaderFadeOutTime = 7000;
             function hidePreloader() {
             var preloader = $('.spinner-wrapper');
             preloader.fadeOut(preloaderFadeOutTime);
             }
             hidePreloader();
-            });
+            $("#click").click(()=>{
+                new Audio ("./music/music.mp3").play ()
+                });
+            })
+            
+            $('#body').show();
+            $(".spinner-wrapper").hide();
+            
             </script> 
     </body>
 </html>
