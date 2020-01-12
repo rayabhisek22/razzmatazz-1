@@ -287,8 +287,8 @@ ul a{
 }
 
 ul a li{
-    margin: 10px auto;
-
+    margin: 0px auto;
+    line-height: 30px;
 }
 
 ul a:hover{
@@ -308,13 +308,37 @@ li i{
 }
 
 .footer-bottom{
-    padding:10px;
+    padding:5px;
     background:#3d545f;
     color:#fff;
     font-size: 12px;
 
 }
 
+
+
+.social-icons a{
+    display:inline-block;
+    width: 35px;
+    height: 35px;
+    text-align:center;
+    background:  #00121b;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50%;
+    transition:0.5s;
+    padding: 2px;
+  }
+  
+  .social-icons a .fa{
+    line-height:40px;
+    font-size: 20px;
+  
+  }
+  
+  .social-icons a:hover {
+    background: #ff9800;
+  }
 
 
 

@@ -251,6 +251,29 @@ li i{
 
 
 
+.social-icons a{
+    display:inline-block;
+    width: 45px;
+    height: 45px;
+    text-align:center;
+    background:  #00121b;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50%;
+    transition:0.5s;
+  
+  }
+  
+  .social-icons a .fa{
+    line-height:45px;
+    font-size: 25px;
+  
+  }
+  
+  .social-icons a:hover {
+    background: #ff9800;
+  }
+
 
 
 
